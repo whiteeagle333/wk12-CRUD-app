@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 12 Lab Solution</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark">
+    
+<!-- page elements alignment -->
+    <div class="d-flex justify-content-center align-items-center " style="height:150vh; padding-left: 5px; padding-right: 5px;">
+      
+<!-- 1st bootstrap form customization -->
+   <form class="mx-auto">
+      <h4 class="text-white">Add New Student Form</h4>
+      <div class="form-row ">
+      <div class="form-group text-white col-md-12">
+        <label for="newName ">Full Name</label>
+        <input
+          type="text "
+          class="form-control"
+          id="newName"
+          placeholder="James Smith"
+        />
+      </div>
+      <div class="form-group text-white col-md-12">
+        <label for="newAssignment">Assignment</label>
+        <input
+          type="text"
+          class="form-control"
+          id="newAssignment"
+          placeholder="Animal/Plant"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mt-3 mb-3 " id="submitStudent">
+        Submit
+      </button>
+    </form>
+
+<!-- 2nd bootstrap form customization -->
+    
+    <form class="mx-auto">
+      <h4 class="text-white">Update Student Form</h4>
+      <div class="form-row  ">
+      <div class="form-group text-white col-md-12">
+        <label for="updateId">Student ID</label>
+        <input type="text" class="form-control" id="updateId" />
+      </div>
+      <div class="form-group text-white col-md-12">
+        <label for="updateName">Student Name</label>
+        <input type="text" class="form-control" id="updateName" />
+      </div>
+      <div class="form-group text-white col-md-12">
+        <label for="updateAssignment">Student Assignment</label>
+        <input type="text" class="form-control" id="updateAssignment" />
+      </div>
+      <button type="submit" class="btn btn-primary mt-3 mb-3" id="updateStudent">
+        Update
+      </button>
+    </form>
+
+  <!-- expandable table   -->
+    <table class="table table-primary">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Assignment</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Jquery CDN  -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper CDN: For dropdowns, popovers, tooltips, etc-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Script CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js script -->
+    <script src="./week12assignment.js"></script>
+  </body>
+</html>
